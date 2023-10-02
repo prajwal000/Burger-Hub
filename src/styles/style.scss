@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;500;600;700;800&display=swap");
+$brand: #f9db03;
+$secondary: #010101;
+$slider1: "/public/assets/";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Catamaran", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 1100px !important;
+}
+.color {
+  color: $brand;
+}
+.top-bar {
+  background: $secondary;
+  padding: 13px 0px;
+  color: #f1f1f1;
+  font-size: 18px;
+}
+.primary-hover {
+  transition: 0.5s;
+  &:hover {
+    color: #e6272d;
+  }
+}
+.crossbar {
+  background: $brand;
+}
+.nav-link {
+  padding-left: 0 !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  color: $secondary !important;
+  transition: 0.5s;
+  &:hover {
+    color: #e6272d !important;
+  }
+}
+
+.img-sec {
+  z-index: 1;
+  position: relative;
+
+  .img-abs {
+    z-index: 1;
+    position: absolute;
+    left: 650px;
+    top: 0px;
+  }
+}
+.sliders {
+  height: 86.5vh;
+  max-width: 100%;
+}
+.carousel-item {
+  position: relative;
+  .slider1 {
+    position: absolute;
+    bottom: 200px;
+    left: 620px;
+    h1 {
+      font-size: 50px;
+      font-family: Oswald (woff2), sans-serif;
+      font-weight: bold;
+      padding-top: 25px;
+    }
+  }
+  .slider3 {
+    position: absolute;
+    bottom: 210px;
+    left: 280px;
+    h1 {
+      font-size: 60px;
+      font-family: Oswald (woff2), sans-serif;
+      font-weight: bold;
+      padding-top: 25px;
+    }
+  }
+  .slider2 {
+    position: absolute;
+    bottom: 190px;
+    left: 220px;
+    h1 {
+      font-size: 45px;
+      font-family: Oswald (woff2), sans-serif;
+      font-weight: bold;
+      padding-top: 25px;
+    }
+  }
+}
+.primary-button {
+  margin-top: 25px;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-weight: bold;
+  background-color: $brand;
+  font-size: 18px;
+  transition: 0.5s;
+  &:hover {
+    background-color: #e6272d;
+    color: #f1f1f1;
+  }
+}
+.secondary-button {
+  margin-top: 25px;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-weight: bold;
+  background-color: #e6272d;
+  font-size: 18px;
+  color: #f1f1f1;
+  transition: 0.5s;
+  &:hover {
+    background-color: $brand;
+    color: $secondary;
+  }
+}
+.button {
+  margin-top: 15px;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-weight: bold;
+  background-color: #ffffff;
+  border: 3px solid #ccc;
+  font-size: 18px;
+  color: #e6272d;
+  transition: 0.5s;
+  &:hover {
+    border: 3px solid #e6272d;
+    background-color: #e6272d;
+    color: #ffffff;
+  }
+}
+
+/// media queries
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+}
+@media only screen and (max-width: 479px) {
+  .container {
+    width: 100% !important;
+  }
+  .sliders {
+    max-width: 100%;
+    height: 40vh;
+  }
+  .slider1 {
+    position: absolute;
+    left: 20px !important;
+    bottom: 0px !important ;
+
+    h1 {
+      font-size: 25px !important;
+      font-family: Oswald (woff2), sans-serif;
+      font-weight: bold;
+      padding-top: 25px;
+    }
+    h2 {
+      font-size: 20px !important;
+    }
+  }
+  .slider3 {
+    position: absolute;
+    bottom: 0px !important;
+    left: 10px !important;
+
+    h1 {
+      font-size: 25px !important;
+      font-family: Oswald (woff2), sans-serif;
+      font-weight: bold;
+      padding-top: 25px;
+    }
+  }
+  .slider2 {
+    position: absolute;
+    bottom: 0px !important;
+    left: 10px !important;
+    h1 {
+      font-size: 25px !important;
+      font-family: Oswald (woff2), sans-serif;
+      font-weight: bold;
+      padding-top: 25px;
+    }
+  }
+  .mob-nav-link {
+    padding-top: 25px !important;
+  }
+  .productsbanner {
+    height: auto !important;
+  }
+}
+.productsbanner {
+  height: 100vh;
+}
+.products-img {
+  border-radius: 20px;
+}
+.recipies-btn {
+  top: 160px;
+  right: 170px;
+  background: #ffffff;
+  border: none;
+  padding: 15px 45px;
+  font-size: 25px;
+  font-weight: bolder;
+  border-radius: 50px;
+  transition: 0.8s;
+  &:hover {
+    background-color: #e6272d;
+    color: #f1f1f1;
+  }
+}
+.recipies-img {
+  border-radius: 20px;
+  filter: brightness(90%);
+  transition: 0.8s;
+  &:hover {
+    filter: brightness(50%);
+  }
+}
+.recipies-img3 {
+  max-width: 100%;
+  height: 50%;
+  border-radius: 20px;
+  transition: 0.8s;
+  &:hover {
+    filter: brightness(50%);
+  }
+}
